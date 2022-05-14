@@ -13,7 +13,7 @@ show_edit_on_github: false
 show_date: false
 ---
 
-### Learning Objectives: Game Management and C# Basics
+**Learning Objectives:** Game Management and C# Basics
 -   **Managing Audio**: Introduction to AudioMixer
 -   **Optimising** the game: Object Pooling
 -   **Managing** the game: 

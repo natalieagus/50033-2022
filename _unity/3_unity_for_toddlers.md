@@ -13,7 +13,7 @@ show_edit_on_github: false
 show_date: false
 ---
 
-### Learning Objectives: Visual Effects
+**Learning Objectives:** Visual Effects
 
 -   Adding visual effects with **URP**
 - Basics of 2D lights 

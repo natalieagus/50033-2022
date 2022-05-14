@@ -13,10 +13,10 @@ show_edit_on_github: false
 show_date: false
 ---
 
-### Learning Objectives: Pluggable FSM
--   Using Scriptable objects as FSM   
+**Learning Objectives:** Pluggable FSM
+-   Using **Scriptable Objects** as FSM   
 -  Create state, transition, and action
-- Trigger behaviors on certain states
+- **Trigger** behaviors on certain states
 
 # Introduction
 Create a new 3D project and import the asset `TankProject` uploaded at the course handout. Then, replace the Project Settings folder with the one provided at the course handout as well. Open Scenes >> Main and you shall see this setup:

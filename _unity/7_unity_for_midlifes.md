@@ -13,7 +13,7 @@ show_edit_on_github: false
 show_date: false
 ---
 
-### Learning Objectives: Pathfinding Using Navmesh
+**Learning Objectives:** Pathfinding Using Navmesh
 - **NavMesh Basics:**
 	- Creating a click-to-move game
 	- Connecting navmeshes together

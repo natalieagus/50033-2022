@@ -13,16 +13,16 @@ show_edit_on_github: false
 show_date: false
 ---
 
-### Learning Objectives: Basic Game Components
+**Learning Objectives:** Basic Game Components
 
--   Creating animator and animation clip   
--   Transition between animations
--   Setting up parameters for animation
--   Timing animations and creating events
--   Using coroutines: to execute methods over a number of frames or seconds
--   Exploring the 2D physics engine: Colliders, 2D effectors, 2D joints
--   Adding sound effects
-- Creating physics materials and scripting
+-   **Creating** animator and animation clip   
+-   **Transition** between animations
+-   Setting up **parameters** for animation
+-   Timing **animations** and creating events
+-   Using **coroutines**: to execute methods over a number of frames or seconds
+-   Exploring the 2D **physics** engine: Colliders, 2D effectors, 2D joints
+-   Adding **sound** effects
+- Creating physics **materials** and **scripting**
 
 
 # Introduction

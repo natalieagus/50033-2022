@@ -14,7 +14,7 @@ show_date: false
 ---
 
 
-### Learning Objectives: Advanced Managements
+**Learning Objectives:** Advanced Managements
 - Persistence between Scenes using Singletons
 - Game Architecture with Scriptable Objects
 	- ScriptableObject Event System
