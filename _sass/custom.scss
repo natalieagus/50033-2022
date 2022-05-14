@@ -128,8 +128,8 @@
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #2e2e2e;
-  color: rgb(255, 255, 255);
+  background-color: $main-color-3;
+  color: $text-color;
   cursor: pointer;
   padding: 5px;
   border: none;
@@ -152,8 +152,8 @@
   padding: 0 10px;
   display: none;
   overflow: hidden;
-  color: rgb(237, 237, 237);
-  background-color: #202020;
+  color: $text-color;
+  background-color: $main-color-3;
   font-size: 0.9em;
 }
 
