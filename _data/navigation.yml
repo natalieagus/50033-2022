@@ -1,62 +1,96 @@
 header:
   - title: Home
     url: /index.html
-  - title: OS-Notes
-    url: /os_notes/week1_intro
-    key: os_notes
-  - title: OS-Labs
-    url: /os_labs/lab1_intro
-    key: os_labs
-  # - title: NS-Notes
-  #   url: /ns_notes/overview
-  #   key: ns_notes
-  # - title: NS-Labs
-  #   url: /ns_labs/overview
-  #   key: ns_labs
-  - title: Assignments
-    url: /assignments/overview
-    key: assignments
+  - title: Collection1
+    url: /collection1/overview
+    key: collection1
+  - title: Collection2
+    url: /collection2/brief
+    key: collection2
+  - title: Collection3
+    url: /collection3/overview
+    key: collection3
 
-os_notes:
-  - title: Week 1
+collection1:
+  - title: Overview
     children:
-      - title: Introduction to OS
-        url: /os_notes/week1_intro
-      - title: The Kernel
-        url: /os_notes/week1_kernel
-      - title: Resource Allocator and Coordinator
-        url: /os_notes/week1_resource
-      - title: Memory and Process Management
-        url: /os_notes/week1_mpm
-  # - title: Week 2
-  #   children:
-  #     - title: OS Services and UI
-  #       url: /os_notes/week2_serviceui
+      - title: Quick Start
+        url: /collection1/overview
 
-ns_notes:
-  - title: Week 1
+collection2:
+  - title:
     children:
       - title: Overview
-        url: /ns_notes/overview
+        url: /collection2/overview
+      - title: Brief
+        url: /collection2/brief
+      - title: Brief Info
+        url: /collection2/brief-info
+      - title: Item Cover
+        url: /collection2/item-cover
+      - title: Item Cover Readmore
+        url: /collection2/item-cover-excerpt-readmore
+      - title: Item Cover Excerpt
+        url: /collection2/item-cover-excerpt
+      - title: Item Cover Readmore Info
+        url: /collection2/item-cover-excerpt-readmore-info
+      - title: Grid
+        url: /collection2/grid
+      - title: Grid Small
+        url: /collection2/grid-small
 
-os_labs:
-  - title: Lab 1
+collection3:
+  - title: Tutorial Mode
+    url: /collection3/overview
+  - title: Start
     children:
-      - title: Introduction
-        url: /os_labs/lab1_intro
-      - title: CLI Basics
-        url: /os_labs/lab1_cls
-      - title: Scripts and Compilation
-        url: /os_labs/lab1_sc
-
-ns_labs:
-  - title: Lab 1
+      - title: Quick Start
+        url: /collection3/quick-start
+      - title: Structure
+        url: /collection3/structure
+      - title: Update from 1.x to 2.x
+        url: /collection3/update-from-1-to-2
+  - title: Customization
     children:
-      - title: Overview
-        url: /ns_labs/overview
-
-assignments:
-  - title: PA1 - Shell
+      - title: Configuration
+        url: /collection3/configuration
+      - title: Navigation
+        url: /collection3/navigation
+      - title: Layouts
+        url: /collection3/layouts
+      - title: Logo and Favicon
+        url: /collection3/logo-and-favicon
+      - title: Authors
+        url: /collection3/authors
+      - title: Internationalization
+        url: /collection3/i18n
+  - title: Content
     children:
-      - title: Overview
-        url: /assignments/overview
+      - title: Writing Posts
+        url: /collection3/writing-posts
+      - title: Additional Styles
+        url: /collection3/additional-styles
+      - title: Extensions
+        url: /collection3/extensions
+      - title: Markdown Enhancements
+        url: /collection3/markdown-enhancements
+  - title: Extra
+    children:
+      - title: Spacing
+        url: /collection3/spacing
+      - title: Grid
+        url: /collection3/grid
+      - title: Icons
+        url: /collection3/icons
+      - title: Image
+        url: /collection3/image
+      - title: Button
+        url: /collection3/button
+      - title: Item
+        url: /collection3/item
+      - title: Card
+        url: /collection3/card
+      - title: Hero
+        url: /collection3/hero
+      - title: Swiper
+        url: /collection3/swiper
