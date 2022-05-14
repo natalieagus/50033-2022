@@ -8,7 +8,7 @@ aside:
 ---
 
 50.033 is an introductory course about the basics of game creation. This course provides an <span style="color:#ff006a;"><b>broad overview</b></span> of different aspects of game development.
-{:.info}
+{:.warning}
 
 Students will get in touch with industry standard C# Programming, starting with console application, then GUI games on various platforms with graphics, dialog boxes, and user control. The game engine that we are using in this course is [Unity](https://unity.com), an industry standard game creation tool. 
 

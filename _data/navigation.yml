@@ -1,36 +1,93 @@
 header:
   - title: Home
     url: /index.html
-  - title: Unity
+  - title: Unity Basic
     url: /unity/unity_for_newborns
     key: unity
+  - title: Unity Pro
+    url: /unity/unity_for_adults
+    key: unitypro
 
 unity:
   - title: Week 1
     children:
       - title: Unity for Newborns
         url: /unity/unity_for_newborns
+      - title: Improving Mario GameObject
+        url: /unity/unity_for_newborns_2
+      - title: Checkoff
+        url: /unity/unity_for_newborns_3
   - title: Week 2
     children:
       - title: Unity for Babies
         url: /unity/unity_for_babies
+      - title: Physics2D
+        url: /unity/unity_for_babies_2
+      - title: Coroutines
+        url: /unity/unity_for_babies_3
+      - title: Checkoff
+        url: /unity/unity_for_babies_4
+
   - title: Week 3
     children:
       - title: Unity for Toddlers
         url: /unity/unity_for_toddlers
+      - title: Adding 2D Lights
+        url: /unity/unity_for_toddlers_2
+      - title: Shaders
+        url: /unity/unity_for_toddlers_3
+      - title: Postprocessing
+        url: /unity/unity_for_toddlers_4
+      - title: Parallax Background
+        url: /unity/unity_for_toddlers_5
+      - title: Particle System 2D
+        url: /unity/unity_for_toddlers_6
+      - title: Checkoff
+        url: /unity/unity_for_toddlers_7
+
   - title: Week 4
     children:
       - title: Unity for Children
         url: /unity/unity_for_children
+      - title: Object Pooling
+        url: /unity/unity_for_children_2
+      - title: Scriptable Objects and Managers
+        url: /unity/unity_for_children_3
+      - title: Checkoff
+        url: /unity/unity_for_children_4
   - title: Week 5
     children:
       - title: Unity for Teens
         url: /unity/unity_for_teens
-  - title: Week 6
+      - title: Scriptable Object Game Architecture
+        url: /unity/unity_for_teens_1
+      - title: Inventory System
+        url: /unity/unity_for_teens_2
+      - title: Checkoff
+        url: /unity/unity_for_teens_3
+
+unitypro:
+  - title: Unity for Adults
     children:
-      - title: Unity for Adults
+      - title: Introduction
         url: /unity/unity_for_adults
-      - title: Unity for Midlifes
+      - title: Combo System
+        url: /unity/unity_for_adults_2
+      - title: C# Async-Await
+        url: /unity/unity_for_adults_3
+  - title: Unity for Midlifes
+    children:
+      - title: Introduction
         url: /unity/unity_for_midlifes
-      - title: Unity for Elderlies
+      - title: Navmesh Basics
+        url: /unity/unity_for_midlifes_2
+      - title: Traversing Between Navmesh Surfaces
+        url: /unity/unity_for_midlifes_3
+  - title: Unity for Midlifes
+    children:
+      - title: Pluggable FSM Overview
         url: /unity/unity_for_elderlies
+      - title: Create Scriptable Objects
+        url: /unity/unity_for_elderlies_2
+      - title: Skipping Transitions
+        url: /unity/unity_for_elderlies_3

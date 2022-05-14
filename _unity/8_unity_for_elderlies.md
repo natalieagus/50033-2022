@@ -1,11 +1,11 @@
 ---
-title: Unity for Elderlies
+title: Pluggable FSM Overview
 permalink: /unity/unity_for_elderlies
 key: unity-unity_for_elderlies
 layout: article
-nav_key: unity
+nav_key: unitypro
 sidebar:
-  nav: unity
+  nav: unitypro
 license: false
 aside:
   toc: true
@@ -18,10 +18,10 @@ show_date: false
 -  Create state, transition, and action
 - **Trigger** behaviors on certain states
 
-# Introduction
+
 Create a new 3D project and import the asset `TankProject` uploaded at the course handout. Then, replace the Project Settings folder with the one provided at the course handout as well. Open Scenes >> Main and you shall see this setup:
 
-![test](https://www.dropbox.com/s/qy4xz65zj9eww1n/1.png?raw=1)
+<img src="https://www.dropbox.com/s/qy4xz65zj9eww1n/1.png?raw=1"  class="center_ninety"/>
 
 The goal of this tutorial is to **understand** how the game utilises a state machine such that the two tanks: green (scanner) and red (chaser) are able to identify you in the map and perform actions accordingly.
 
@@ -29,7 +29,7 @@ We will use ScriptableObjects that we have learned in the previous part to imple
 
 # PlayerTank 
 Go to Prefab >>> `PlayerTank` and open the prefab:
-![playertank](https://www.dropbox.com/s/7avtsffgyitny6q/13.png?raw=1)
+<img src="https://www.dropbox.com/s/7avtsffgyitny6q/13.png?raw=1"  class="center_ninety"/>
 
 Study these 3 scripts attached to `PlayerTank`:
 
@@ -187,10 +187,10 @@ public class LookDecision : Decision
 ## Creating States, Actions, and Decisions Scriptable Objects
 All Scriptable Object instances can be found under ScriptableObjects folder. For Actions and Decisions, they're pretty straightforward: one instance per script type with no other setup required:
 
-![actions](https://www.dropbox.com/s/w5mfy3zp469m3ef/3.png?raw=1)
+<img src="https://www.dropbox.com/s/w5mfy3zp469m3ef/3.png?raw=1"  class="center_ninety"/>
 
 The States instances however require more setup. For instance, click on ScriptableObjects >> States >> AITankChaserStates >> **PatrolChaser**, and you shall see this at the inspector:
-![patrolchaser](https://www.dropbox.com/s/gl17dk7fnbw7w84/4.png?raw=1)
+<img src="https://www.dropbox.com/s/gl17dk7fnbw7w84/4.png?raw=1"  class="center_ninety"/>
 
 **RemainInstate** is a special state with empty Actions and Transitions. It's effect is to stay at the same state and perform `DoActions` and `CheckTransitions` of the **same state** again at the **next** `Update()` call. 
 
@@ -237,7 +237,7 @@ Note that CheckTransitions will always call StateController's TransitionToState 
 
 ## AITankChaser
 The Red AI Tank's (chaser tank) state transition diagram can be drawn such:
-![statechaser](https://www.dropbox.com/s/1yn8qtxrgcfzh8r/5.png?raw=1)
+<img src="https://www.dropbox.com/s/1yn8qtxrgcfzh8r/5.png?raw=1"  class="center_ninety"/>
 
 **What this Bot does in a nutshell:**
 1.  Begin at state  `PatrolChaser` and perform `PatrolAction` of circulating around waypoint 1, 2, then 3 in that order. Afterwards, always perform `LookDecision` : cast a ray and see if it hits anybody with a tag of Player.
@@ -251,20 +251,20 @@ The Red AI Tank's (chaser tank) state transition diagram can be drawn such:
 		- If PlayerTank is **no longer active**: — means *dead* — The bot will go back to `PatrolChaser` State.
 
 The green state "Patrol" above corresponds to the Scriptable Object `PatrolChaser`:
-![patrolchaser](https://www.dropbox.com/s/gl17dk7fnbw7w84/4.png?raw=1)
+<img src="https://www.dropbox.com/s/gl17dk7fnbw7w84/4.png?raw=1"  class="center_ninety"/>
 
 
 and the red state "Chase" in the diagram above corresponds to the Scriptable Object `ChaseChaser` in the Project.
-![chasechaser](https://www.dropbox.com/s/mm6vntc2yz8l1xb/6a.png?raw=1)
+<img src="https://www.dropbox.com/s/mm6vntc2yz8l1xb/6a.png?raw=1"  class="center_ninety"/>
 
 Hence the StateController component in AITankChaser is set to start at `PatrolChaser` as it's **starting state**:
 
-![startchaser](https://www.dropbox.com/s/78ssyl0uaspu19j/7a.png?raw=1)
+<img src="https://www.dropbox.com/s/78ssyl0uaspu19j/7a.png?raw=1"  class="center_ninety"/>
 
 ## AITankScanner
 The Green AI Tank's (scanner tank) state transition diagram can be drawn such:
 
-![statescanner](https://www.dropbox.com/s/4wwsqcjctjdsift/8.png?raw=1)
+<img src="https://www.dropbox.com/s/4wwsqcjctjdsift/8.png?raw=1"  class="center_ninety"/>
 
 **What this Bot does in in a nutshell:**
 1.  An AITankScanner will start in the `PatrolScanner`  State,
@@ -282,17 +282,17 @@ The Green AI Tank's (scanner tank) state transition diagram can be drawn such:
 	- The tank will go either to back to `PatrolScanner`, remain in `ScanScanner` state, or go `ChaseScanner` State accordingly depending on the outcome of these two decisions. 
 
 The green state "Patrol" above corresponds to the Scriptable Object `PatrolScanner`:
-![patrolscanner](https://www.dropbox.com/s/ck8c6zkz8s6huqv/9.png?raw=1)
+<img src="https://www.dropbox.com/s/ck8c6zkz8s6huqv/9.png?raw=1"  class="center_ninety"/>
 
 The red state "Chase" in the diagram above corresponds to the Scriptable Object `ChaseScanner`:
-![chasescanner](https://www.dropbox.com/s/kjzv57cd3j8cn8i/10.png?raw=1)
+<img src="https://www.dropbox.com/s/kjzv57cd3j8cn8i/10.png?raw=1"  class="center_ninety"/>
 
 The yellow state "Alert" in the diagram above corresponds to the Scriptable Object `AlertScanner` in the Project:
 
-![alertscanner](https://www.dropbox.com/s/h3mutzffgaglxmo/11.png?raw=1)
+<img src="https://www.dropbox.com/s/h3mutzffgaglxmo/11.png?raw=1"  class="center_ninety"/>
 
 Hence the StateController component in AITankScanner is set to start at `PatrolScanner` as it's **starting state**:
-![aitankscanner](https://www.dropbox.com/s/a1xnl2w0eh67wmp/12.png?raw=1)
+<img src="https://www.dropbox.com/s/a1xnl2w0eh67wmp/12.png?raw=1"  class="center_ninety"/>
 
 
 # Further Details
@@ -314,13 +314,13 @@ In `StateController.cs` script, we have this method:
 
 It is clear that if `nextState` equals to `remainState` (which is a **public** variable with `RemainInState` Scriptable Object Linked Up in the Inspector) as shown for AITankScanner as example:
 
-![aitankscanner](https://www.dropbox.com/s/a1xnl2w0eh67wmp/12.png?raw=1)
+<img src="https://www.dropbox.com/s/a1xnl2w0eh67wmp/12.png?raw=1"  class="center_ninety"/>
 
 
 ..then we don’t need to execute the rest of the instructions anymore. 
 
 But why can't we simply put the **same** state, for example `PatrolScanner` as the `FalseState` instead? Why do we have to use `RemainInState`?
-![patrolscanner](https://www.dropbox.com/s/ck8c6zkz8s6huqv/9.png?raw=1)
+<img src="https://www.dropbox.com/s/ck8c6zkz8s6huqv/9.png?raw=1"  class="center_ninety"/>
 
 
 The difference between using `RemainInState` and just setting the `False State` as itself (e.g: `PatrolScanner` for above's example) depends on whether `OnExitState()` is called in the last instruction of `TransitionToState` in `StateController.cs`. 
