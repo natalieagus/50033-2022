@@ -36,3 +36,5 @@ code {
   line-height: map-get($base, line-height-sm);
 }
 ```
+
+Otherwise, edit the highlight theme itself in `/skins/highlight/tomorrow/`
