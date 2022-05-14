@@ -7,100 +7,31 @@ aside:
   toc: true
 ---
 
-This is a sample homepage. Below you can find various styles.
-
-
-Success!
-{:.success}
-
-`success`{:.success} `info`{:.info} `warning`{:.warning} `error`{:.error}
-
-<div class="grid-container">
-<div class="grid grid--p-3">
-<div class="cell cell--12 cell--md-5 cell--lg-4" markdown="1">
-![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_rounded"){:.rounded}
-</div>
-<div class="cell cell--12 cell--md-5 cell--lg-4" markdown="1">
-![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_circle+shadow"){:.circle.shadow}
-</div>
-</div>
-</div>
-
-<div class="grid-container">
-<div class="grid grid--p-1">
-<div class="cell cell--6 cell--md-4 cell--lg-2">
-<div class="button button--success button--pill my-2"><i class="fas fa-space-shuttle"></i> CLICK ME</div>
-</div>
-<div class="cell cell--6 cell--md-4 cell--lg-2">
-<div class="button button--outline-info button--pill my-2"><i class="fas fa-space-shuttle"></i> CLICK ME</div>
-</div>
-<div class="cell cell--6 cell--md-4 cell--lg-2">
-<div class="button button--warning button--rounded my-2"><i class="fas fa-user-astronaut"></i> CLICK ME</div>
-</div>
-<div class="cell cell--6 cell--md-4 cell--lg-2">
-<div class="button button--outline-error button--rounded my-2"><i class="fas fa-user-astronaut"></i> CLICK ME</div>
-</div>
-</div>
-</div>
-
-<!--more-->
-
-[Documentation](https://tianqi.name/jekyll-TeXt-theme/docs/en/additional-styles)
-
-## Alert
-
-Success Text.
-{:.success}
-
-Info Text.
+50.033 is an introductory course about the basics of game creation. This course provides an <span style="color:#ff006a;"><b>broad overview</b></span> of different aspects of game development.
 {:.info}
 
-Warning Text.
-{:.warning}
+Students will get in touch with industry standard C# Programming, starting with console application, then GUI games on various platforms with graphics, dialog boxes, and user control. The game engine that we are using in this course is [Unity](https://unity.com), an industry standard game creation tool. 
 
-Error Text.
-{:.error}
+There are also basic overviews of topics including:
+* Game architecture, 
+* Interface design, 
+* Graphics for game, 
+* Audio for game, 
+* Prototyping and playtesting. 
+ 
+## Learning Objectives
+By the end of 14 weeks, students should be able to:
+* Have a broad but general overview of different aspects of game development.
+* Understand the complete flow of game development in a high level perspective
+* Be prepared to master skill set of game development
 
-## Tag
+## Measurable Outcomes
+* Produce simple games with student’s novel ideas by using existing tools.
+* Ability to use code libraries to rapidly prototype their game ideas and ultimately create bug-free and runnable games.
 
-`success`{:.success}
+## Pre-Requisites
+* Good standing as Term 8 student in computer and information systems and engineering.
+* Good programming skills in any language 
+* Have completed the ISTD Course: 50.001 Introduction to Information Systems & Programming 
+* Have a decent computer to develop and play video games
 
-`info`{:.info}
-
-`warning`{:.warning}
-
-`error`{:.error}
-
-## Image
-
-| `Border` | `Shadow` |
-| ---- | ---- |
-| ![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_border"){:.border} | ![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_shadow"){:.shadow} |
-
-| `Rounded` | `Circle` |
-| ---- | ---- |
-| ![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_rounded"){:.rounded} | ![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_circle"){:.circle} |
-
-### Mixture
-
-| `Border+Rounded` | `Circle+Shadow` |
-| ---- | ---- |
-| ![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_border+rounded"){:.border.rounded} | ![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_circle+shadow"){:.circle.shadow} |
-
-| `Rounded+Shadow` | `Circle+Border+Shadow` |
-| ---- | ---- |
-| ![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_rounded+shadow"){:.circle.rounded.shadow} | ![Image](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/image.jpg "Image_circle+border+shadow"){:.circle.border.shadow}
-
-## Extra
-
-| Name | Description |
-| ---- | ---- |
-| Spacing | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/spacing) |
-| Grid | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/grid) |
-| Icons | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/icons) |
-| Image | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/image) |
-| Button | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/button) |
-| Item | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/item) |
-| Card | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/card) |
-| Hero | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/hero) |
-| Swiper | [Doc](https://tianqi.name/jekyll-TeXt-theme/docs/en/swiper) |

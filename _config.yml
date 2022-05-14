@@ -13,13 +13,13 @@
 
 ## => Site Settings
 ##############################
-text_skin: "ocean" # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+text_skin: "dark" # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: "tomorrow-night-bright" # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 # url: "https://username.github.io"
 # baseurl: /baseurl # does not include hostname
-title: 12.345 Subject
+title: 50.003 Game Design and Development
 description: > # this means to ignore newlines until "Language & timezone"
-  Welcome to 12.345 Course Site!
+  Programming is a skill proven by creation of meaningful projects rather than farming in Hackerrank.
 
 ## => Language and Timezone
 ##############################
@@ -29,10 +29,10 @@ lang: en # the language of your site, default as "en"
 ##############################
 author:
   type: # "person" (default), "organization"
-  name: Your Name
+  name: Natalie Agus
   url:
   avatar: # path or url of avatar image (square)
-  bio: I am an amazing person.
+  bio: I am a Lecturer at SUTD
   email:
   facebook: # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter: # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -134,8 +134,6 @@ defaults:
       type: posts
     values:
       layout: article
-      # sidebar:
-      #   nav: layouts
       sharing: true
       license: true
       aside:
@@ -145,11 +143,7 @@ defaults:
       pageview: true
 
 collections:
-  collection1:
-    output: true
-  collection2:
-    output: true
-  collection3:
+  unity:
     output: true
 
 ## => Plugins
