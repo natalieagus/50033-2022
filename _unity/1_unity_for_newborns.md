@@ -39,7 +39,7 @@ Experienced coders: keep in mind that you too were once a *noob*. You made mista
 The goal of this simple 4-week lab is to recreate basics this classic platform game: **Mario**, step by step and complete it by the end of Week 4. We will try to rebuild World 1-1 as closely as possible, although due to constraints of time, some features may be omitted. In Week 5 & 6, we upgrade our skills to explore Unity3D.
 
 # Preparation
-**Download the starter asset** from your **course handout**, under "Class Calendar" heading, *Week 1 Session 3 row.* This is a starter asset that you can import to your project and complete the lab. It contains all required images, sound files, etc so we can save time searching all these stuffs. 
+**Download the starter asset** from your **course handout**, under "Class Calendar" heading, *Week 1 Lab Session row.* This is a starter asset that you can import to your project and complete the lab. It contains all required images, sound files, etc so we can save time searching all these stuffs. 
 
 ***We do not own any of the assets and are simply using them for non-profit educational purposes.*** 
 
