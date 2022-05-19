@@ -74,6 +74,9 @@ If you're using VSCode, edit `settings.json` to include the following:
 
 <img src="https://www.dropbox.com/s/btqqvzs554xcw3f/4.png?raw=1"  class="center_ninety"/>
 
+After installing `dotnet` and `mono`, then go to Unity > Preferences > External Tools > and click **regenerate project files**:
+
+<img src="/50033/assets/images/lab1/26.png"  class="center_seventy"/>
 
 ## Housekeeping
 To work better, we need to set up the UI in a more comfortable way. We need at least the following windows:
