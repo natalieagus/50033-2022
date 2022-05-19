@@ -68,15 +68,22 @@ If you're using VSCode, edit `settings.json` to include the following:
 ```java
 "omnisharp.defaultLaunchSolution": "latest",
 "omnisharp.path": "latest",
-"omnisharp.monoPath": "",
+"omnisharp.monoPath": "", 
 "omnisharp.useGlobalMono" : "always"
 ```
 
+
 <img src="https://www.dropbox.com/s/btqqvzs554xcw3f/4.png?raw=1"  class="center_ninety"/>
 
-After installing `dotnet` and `mono`, then go to Unity > Preferences > External Tools > and click **regenerate project files** (leave everything unchecked):
+After installing `dotnet` and `mono`, then go to Unity > Preferences > External Tools > and click **regenerate project files** (you can everything unchecked):
 
 <img src="/50033/assets/images/lab1/1.png"  class="center_seventy"/>
+
+Debug:
+{:.error}
+* For macOS user, use "omnisharp.monoPath": "/Library/Frameworks/Mono.framework/Versions/Current" if the above does not work. 
+* You can read the output log of omnisharp (**View > Output **then go to **OmniSharp Log**), and if it omplains about something like [.Net Framework 4.7.1 version](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net471) not found, then just install that version. 
+  
 
 ## Housekeeping
 To work better, we need to set up the UI in a more comfortable way. We need at least the following windows:
