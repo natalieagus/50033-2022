@@ -16,7 +16,7 @@
 text_skin: "dark" # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: "tomorrow-night-bright" # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 # url: "https://username.github.io"
-# baseurl: /baseurl # does not include hostname
+baseurl: /50033 # does not include hostname
 title: 50.033 Game Design and Development
 description: > # this means to ignore newlines until "Language & timezone"
   Programming is a skill proven by creation of meaningful projects rather than farming in Hackerrank.
