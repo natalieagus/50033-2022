@@ -81,7 +81,7 @@ unitypro:
         url: /unity/unity_for_midlifes_2
       - title: Traversing Between Navmesh Surfaces
         url: /unity/unity_for_midlifes_3
-  - title: Unity for Elderly
+  - title: Unity for Elderlies
     children:
       - title: Pluggable FSM Overview
         url: /unity/unity_for_elderlies
