@@ -52,6 +52,7 @@ We need to add some sort of a “floor” to prevent him from falling down.
 	2.  `Rigidbody2D` (set to `static` type)
 - Add a Tag called “Ground”
 - Set its Position and match the components setting as shown.
+- Then, also **add** a `BoxCollider2D` to Mario so that they can "collide" and prevents him from falling to oblivion. 
 
 <img src="https://www.dropbox.com/s/vzoy004dark139h/12.png?raw=1"  class="center_ninety"/>
 
