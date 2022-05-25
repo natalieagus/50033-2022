@@ -21,6 +21,9 @@ Experienced coders: keep in mind that you too were once a *noob*. You made mista
 
 *If you realise that some parts are troublesome or ineffective, then good for you. It means that you’re **smart** and **experienced**, and from now on you can embark on the journey to customize it to a more fitting way: simpler, better, more efficient, whatever it is. You can tell our teaching team your personal opinion, and constructive criticism is always welcome after class. We however expect a certain kind of mutual respect during the lab hours.*
 
+We do not give a **trivial** hand-holding step-by-step tutorial here. We do condense some steps. Remember that this is still part of your graded lab assignment, so you need to **imply** some parts based on standard programming knowledge as a CS student. 
+{:.error}
+
 # Learning Objectives: 2D Basics
 
 -   **Unity editor basics**: layout, arrangements of project files
