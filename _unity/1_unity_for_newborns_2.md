@@ -99,7 +99,7 @@ We can do this by enabling the `flipX` property of its `SpriteRenderer` whenever
 
 **We have to control the `SpriteRenderer` component via the script.** You can pretty much get any component via `GetComponent<type>()` method in the script attached to the game object.  Instantiate the `MarioSprite` under the `Start()` method:
 ```java
-MarioSprite = GetComponent<SpriteRenderer>();
+marioSprite = GetComponent<SpriteRenderer>();
 ```
 
 Finally, implement the following under `Update` and not `FixedUpdate` since this logic has nothing to do with the Physics Engine:
