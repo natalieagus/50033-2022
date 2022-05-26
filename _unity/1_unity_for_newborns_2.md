@@ -238,7 +238,7 @@ By now, you should see the message “*Collided with Gomba*” printed out in th
 Of course any game should have some kind of “start” button and a scoring system. To have our game looks something like the screenshot below (right), we need 3 GameObjects:
 -   Panel
 -   Button
--   Text (for Score)
+-   Text (for Score) -- <span style="color:#f77729;"><b>just Text (under Legacy tab), NOT TextMeshPro</b></span>
     
 Create following GameObject hierarchy as shown in the middle image and rename them accordingly. Right click at the hierarchy, then click **UI >> Panel**, etc. 
 <img src="https://www.dropbox.com/s/5fhsw55xqynrdoo/21.png?raw=1"  class="center_ninety"/>
