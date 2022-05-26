@@ -59,7 +59,7 @@ Then, **add an Animator element** to Mario, and load `MarioController` as the An
 <img src="https://www.dropbox.com/s/b5zrnkagarfylrm/2.png?raw=1"  class="center_ninety"/> 
 
 
-Open the **Animation tab** and you can see some kind of *state machine*. This will the place for us to edit the Animator and dictate which Animation Clip to play under certain condition. 
+Open the **Animator tab** and you can see some kind of *state machine*. This will the place for us to edit the Animator and dictate which Animation Clip to play under certain condition. 
 
 <img src="https://www.dropbox.com/s/cnnqaf8sdy3rurw/3.png?raw=1"  class="center_ninety"/>
 
