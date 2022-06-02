@@ -60,9 +60,5 @@ Click on the UniversalRenderPipelineAsset you created before and load the 2D Ren
 
 <img src="https://www.dropbox.com/s/i54jrije3aylsx3/5.png?raw=1"  class="center_ninety"/>
 
-Open Fighter.scene and notice that everything in the Game window is dark, although you can clearly see in the Scene that there are some stuffs in the world as shown below. If you can't see anything on the Scene either, toggle the light bulb icon to *disable Scene lighting* (for our view when prototyping, but not the camera's). 
-
-<img src="https://www.dropbox.com/s/m4fwprxh8e2bznl/6.png?raw=1"  class="center_ninety"/>
-
 
 *Time to add some Lights, Camera, Action!*

@@ -18,7 +18,7 @@ show_date: false
 The fun thing about enabling URP is that you can now lit up your sprites, thus creating a bit of a *mood*. Right click on your project hierarchy and observe that there are a few 2D Lights GameObjects that you can create, namely FreeformLight2D, SpriteLight2D, GlobalLight2D, and SpotLight2D.
 
 ### GlobalLight2D
-Create a GlobalLight2D Game Object, and set the properties:
+Open Fighter.scene. Create a GlobalLight2D Game Object, and set the properties:
 * Intensity of 0.4
 * Target Sorting Layers: All (this determines which Sprite layers to lit up)
 * Position at `(0, 0, -1)`
@@ -26,6 +26,10 @@ Create a GlobalLight2D Game Object, and set the properties:
 Toggle enable lighting at your Scene view and you should observe a somewhat dimly lit environment like this:
 
 <img src="https://www.dropbox.com/s/na38excwcuqd9yf/7.png?raw=1"  class="center_ninety"/>
+
+If you disable lighting, notice that everything in the Game window is dark, although you can clearly see in the Scene that there are some stuffs in the world as shown below. If you can't see anything on the Scene either, toggle the light bulb icon to *disable Scene lighting* (for our view when prototyping, but not the camera's). 
+
+<img src="https://www.dropbox.com/s/m4fwprxh8e2bznl/6.png?raw=1"  class="center_ninety"/>
 
 ### SpotLight2D
 Another type of light that you can add to the game os SpotLight2D. Create a gameObject of SpotLight2D type and place it as a child gameObject of the player. Place it somewhere near the Player's head to brighten up that area. You should see something like this in your Scene:
