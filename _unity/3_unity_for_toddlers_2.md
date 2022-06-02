@@ -32,7 +32,7 @@ If you disable lighting, notice that everything in the Game window is dark, alth
 <img src="https://www.dropbox.com/s/m4fwprxh8e2bznl/6.png?raw=1"  class="center_ninety"/>
 
 ### SpotLight2D
-Another type of light that you can add to the game os SpotLight2D. Create a gameObject of SpotLight2D type and place it as a child gameObject of the player. Place it somewhere near the Player's head to brighten up that area. You should see something like this in your Scene:
+Another type of light that you can add to the game is SpotLight2D. Create a gameObject of SpotLight2D type and place it as a child gameObject of the player. Place it somewhere near the Player's head to brighten up that area. You should see something like this in your Scene:
 
 <img src="https://www.dropbox.com/s/bi163w5okkvbbqn/37.png?raw=1"  class="center_ninety"/>
 
@@ -93,7 +93,7 @@ Take for example this Mario brick + normal map applied (left) vs regular Mario b
 ### Creating Normal Maps
 Now let's apply normal map to our floor. Our floor looks flat currently, and we need to generate normal maps from the floor's tileset (can be found under GothicVania Church folder >> Environment). 
 
-Let's use an online tool to generate the normal map. This online tool: https://cpetry.github.io/NormalMap-Online/ is absolutely awesome (otherwise you can use Photoshop to generate normal map from a given texture too). Load the tileset image and you should be able to view and download a normal map for it as such:
+Let's use an online tool to generate the normal map. This [online tool](https://cpetry.github.io/NormalMap-Online/ ) is absolutely awesome (otherwise you can use Photoshop to generate normal map from a given texture too). Load the tileset image and you should be able to view and download a normal map for it as such:
 
 <img src="https://www.dropbox.com/s/kb2gfwoz9d0w5kg/10.png?raw=1"  class="center_ninety"/>
 
