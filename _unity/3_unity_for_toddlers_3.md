@@ -25,7 +25,7 @@ Creating your own shader is no easy feat. It is one of the hardest thing to do i
 <img src="https://www.dropbox.com/s/a1zs8qg6bpjmlql/postprocessing.gif?raw=1"  class="center_ninety"/>
 
 ## Creating a Basic Shader Graph
-Under Assets, create a folder called Shader. Inside it, right click Create >> Shader >> Universal Render Pipeline >> Sprite Unlit Shader Graph. 
+Under Assets, create a folder called Shader. Inside it, right click Create >> Shader >> Shader Graph >>  URP  >> Sprite Unlit Shader Graph. 
 
 Name it: `glowGraph`. Double click the graph and you should be presented with the following graph editor UI:
 
