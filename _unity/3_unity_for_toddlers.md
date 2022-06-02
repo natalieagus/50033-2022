@@ -43,7 +43,7 @@ Go to Window >> Package manager, and download Universal RP from Unity Registry a
 ## Create Pipeline Asset 
 This will add the URP package to your project. Afterwards, create a folder in the Assets folder called "Rendering". Inside it, create Rendering >> Universal Render Pipeline >> Pipeline Asset (Forward Renderer). 
 
-<img src="https://www.dropbox.com/s/9rmnuz90dwah5pd/2.png?raw=1"  class="center_ninety"/>
+<img src="/50033/assets/images/lab2/1.png"  class="center_seventy"/>
 
 ## Modify Project Graphics Setting
 
