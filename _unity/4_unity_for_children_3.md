@@ -39,7 +39,7 @@ int currentScore;
 int currentPlayerHealth;
 
 // for Reset values
-Vector3 gombaSpawnPointStart = new Vector3(2.5f, -0.45f, 0); // hardcoded location
+Vector3 goombaSpawnPointStart = new Vector3(2.5f, -0.45f, 0); // hardcoded location
 // .. other reset values 
 
 // for Consume.cs
@@ -180,7 +180,7 @@ CentralManager.centralManagerInstance.method(parameters...)
 ``` 
 
 ## Create EnemyController.cs Script for Enemy Prefab
-Initially we have created `gombaEnemy` and `greenEnemy` prefabs. We now need a script to control their movements and behaviour. It is up to you how you want to implement this script, but for example let's just implement one similar to our first lab, that is to create enemies that patrol back and forth between Point A and B, where Point A and B are at at most 5 x-units away from its initial `transform.position.x`. 
+Initially we have created `goombaEnemy` and `greenEnemy` prefabs. We now need a script to control their movements and behaviour. It is up to you how you want to implement this script, but for example let's just implement one similar to our first lab, that is to create enemies that patrol back and forth between Point A and B, where Point A and B are at at most 5 x-units away from its initial `transform.position.x`. 
 
 Here's a sample quick implementation to move the enemy back and forth for a fixed distance. Set up the appropriate constants for `maxOffset` and `enemyPatrolTime` in `gameConstants` accordingly. 
 
@@ -223,7 +223,7 @@ public  class EnemyController : MonoBehaviour
 	void  Update()
 	{
 		if (Mathf.Abs(enemyBody.position.x  -  originalX) <  gameConstants.maxOffset)
-		{// move gomba
+		{// move goomba
 			MoveEnemy();
 		}
 		else

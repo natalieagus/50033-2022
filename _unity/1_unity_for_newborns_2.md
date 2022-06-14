@@ -142,7 +142,7 @@ Don't forget to **adjust** the Camera's `Transform` so that the ground is nicely
 # Adding Obstacle
 Now its time to create the Enemy. 
 * Create a 2D Object >> Sprite onto the scene, name it `Enemy`
-* Put `gomba1` as its sprite, edit its `Transform` and you should see the following on your scene. 
+* Put `goomba1` as its sprite, edit its `Transform` and you should see the following on your scene. 
 * Change its **Tag** to `Enemy` (create it).
 
 <img src="https://www.dropbox.com/s/1usyufw0le5g4tb/18.png?raw=1"  class="center_ninety"/>
@@ -176,7 +176,7 @@ Let’s say we need the enemy to patrol left and right up to a certain offset X 
   void ComputeVelocity(){
       velocity = new Vector2((moveRight)*maxOffset / enemyPatroltime, 0);
   }
-  void MoveGomba(){
+  void Movegoomba(){
       enemyBody.MovePosition(enemyBody.position + velocity * Time.fixedDeltaTime);
   }
 ```
@@ -193,21 +193,21 @@ Then implement `Update()` method in `EnemyController.cs`.
    void Update()
   {
       if (Mathf.Abs(enemyBody.position.x - originalX) < maxOffset)
-      {// move gomba
-          MoveGomba();
+      {// move goomba
+          Movegoomba();
       }
       else{
           // change direction
           moveRight *= -1;
           ComputeVelocity();
-          MoveGomba();
+          Movegoomba();
       }
   }
 ```
 
 The idea:
 
--   `If` Gomba isn’t too far away from its starting position yet, move it to the designated direction
+-   `If` goomba isn’t too far away from its starting position yet, move it to the designated direction
 -   `Else`, flip direction
 
 ## Collision with Enemy
@@ -227,12 +227,12 @@ Implement the callback function `OnTriggerEnter2D` in `PlayerController.cs`:
   {
       if (other.gameObject.CompareTag("Enemy"))
       {
-          Debug.Log("Collided with Gomba!");
+          Debug.Log("Collided with goomba!");
       }
   }
 ```
 
-By now, you should see the message “*Collided with Gomba*” printed out in the console whenever Mario collides with Gomba.
+By now, you should see the message “*Collided with goomba*” printed out in the console whenever Mario collides with goomba.
 
 # UI Elements
 Of course any game should have some kind of “start” button and a scoring system. To have our game looks something like the screenshot below (right), we need 3 GameObjects:
@@ -327,7 +327,7 @@ To stitch all the logic together:
 >Remember to implement the callback function for the button as a `public` method else you won’t see it in the dropdown.
 
 # Scoring System
-A game will not be complete without some kind of scoring or reward system. One way to “**count**” a score is to count how many time Mario has *successfully jumped over Gomba*. To do this, we need to know where Gomba is at all times, and of course the **reference** to the **scoreText** GameObject.
+A game will not be complete without some kind of scoring or reward system. One way to “**count**” a score is to count how many time Mario has *successfully jumped over goomba*. To do this, we need to know where goomba is at all times, and of course the **reference** to the **scoreText** GameObject.
 
   
 Add these variables in `PlayerController.cs`:
@@ -340,7 +340,7 @@ private bool countScoreState = false;
 
 Then in the `Update()` function of `PlayerController.cs,` add the following check:
 ```java
-     // when jumping, and Gomba is near Mario and we haven't registered our score
+     // when jumping, and goomba is near Mario and we haven't registered our score
       if (!onGroundState && countScoreState)
       {
           if (Mathf.Abs(transform.position.x - enemyLocation.position.x) < 0.5f)
@@ -359,7 +359,7 @@ Set `countScoreState` to be true when “space” key is pressed under the `Fixe
       {
           marioBody.AddForce(Vector2.up * upSpeed, ForceMode2D.Impulse);
           onGroundState = false;
-          countScoreState = true; //check if Gomba is underneath
+          countScoreState = true; //check if goomba is underneath
       }
 ```
 
@@ -384,8 +384,8 @@ Finally, we can conveniently **link up** **scoreText** and **Enemy** **Transform
 
 You can adjust `speed, upSpeed,` and `maxSpeed`, as well as **Mario’s** `Mass` and `GravityScale` to make the movement feels natural. 
 
-* The scoreText should increase whenever Mario successfully jumps over Gomba and 
-* The game shall stop abruptly when Mario collides with Gomba. 
+* The scoreText should increase whenever Mario successfully jumps over goomba and 
+* The game shall stop abruptly when Mario collides with goomba. 
 
 <img src="https://www.dropbox.com/s/sdi5a58pjmybfs5/25.png?raw=1"  class="center_ninety"/>
 

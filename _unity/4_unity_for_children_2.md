@@ -30,10 +30,10 @@ We begin by stating the types of objects that we can instantiate in our Pool. We
 
 > An _enumeration type_ (or _enum type_) is a [value type](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types) defined by a set of named constants of the underlying [integral numeric](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) type.
 
-As an example, we have two enemy types: gomba and green. You can define your own integral numeric type on the right hand side,  but for sanity sake let's use something intuitive as follows: 
+As an example, we have two enemy types: goomba and green. You can define your own integral numeric type on the right hand side,  but for sanity sake let's use something intuitive as follows: 
 ```java
 public  enum ObjectType{
-	gombaEnemy =  0,
+	goombaEnemy =  0,
 	greenEnemy =  1
 }
 ```
@@ -82,9 +82,9 @@ public  List<ObjectPoolItem> itemsToPool; // types of different object to pool
 public  List<ExistingPoolItem> pooledObjects; // a list of all objects in the pool, of all types
 ```
 
-So for example, if we have **two** types of monsters: Gomba and Green, the number of elements in `itemsToPool` is exactly **two** `ObjectPoolItems`, each containing the metadata for each monster in the form of `ObjectPoolItem`. 
+So for example, if we have **two** types of monsters: goomba and Green, the number of elements in `itemsToPool` is exactly **two** `ObjectPoolItems`, each containing the metadata for each monster in the form of `ObjectPoolItem`. 
 
-Now suppose we want to have at maximum **three** Gombas and **six** Green spawned (but deactivated at first), then the number of elements in pooledObjects is **nine**, each in the form of `ExistingPoolItem`. 
+Now suppose we want to have at maximum **three** goombas and **six** Green spawned (but deactivated at first), then the number of elements in pooledObjects is **nine**, each in the form of `ExistingPoolItem`. 
 
 
 We then can implement the `Awake()` method of ObjectPooler class, where we spawn all items for each `ObjectPoolItem` and put them inside `pooledObjects` List. 
@@ -194,13 +194,13 @@ void  spawnFromPooler(ObjectType i){
 Then we can simply test spawning something in `Awake()`:
 
 ```java
-// spawn two gombaEnemy
+// spawn two goombaEnemy
 for (int j =  0; j  <  2; j++)
-	spawnFromPooler(ObjectType.gombaEnemy);
+	spawnFromPooler(ObjectType.goombaEnemy);
 ```
 
 ## Using ObjectPooler.cs
-Before we can use `ObjectPooler.cs` as a component, we need to prepare the prefabs for each object type: `gombaEnemy` and `greenEnemy`. Create these two prefabs with any sprite you want. Here's our sample for `gombaEnemy`:
+Before we can use `ObjectPooler.cs` as a component, we need to prepare the prefabs for each object type: `goombaEnemy` and `greenEnemy`. Create these two prefabs with any sprite you want. Here's our sample for `goombaEnemy`:
 
 <img src="https://www.dropbox.com/s/6n0zxn7c0vayiy8/6.png?raw=1"  class="center_ninety"/>
 
@@ -218,7 +218,7 @@ Then create an Empty game object in the scene, name it `EnemySpawnPool` and atta
 
 Finally, create another Empty GameObject in the scene called `EnemySpawnManager` as shown in the screenshot above, and attach the `SpawnManager.cs` script as its component. 
 
-Test run and you shall have two cute `gombaEnemy` spawned in your scene (or whichever `enemy type` you decided to test):
+Test run and you shall have two cute `goombaEnemy` spawned in your scene (or whichever `enemy type` you decided to test):
 
 <img src="https://www.dropbox.com/s/kx3q40fszmt0hzk/9.png?raw=1"  class="center_ninety"/>
 

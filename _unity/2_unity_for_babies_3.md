@@ -73,7 +73,7 @@ void  OnCollisionEnter2D(Collision2D col)
 	// Debug.Log("OnCollisionEnter2D");
 	if (col.gameObject.CompareTag("Player") &&  !hit){
 		hit  =  true;
-		Instantiate(consummablePrefab, new  Vector3(this.transform.position.x, this.transform.position.y  +  1.0f, this.transform.position.z), Quaternion.identity);
+		Instantiate(consumablePrefab, new  Vector3(this.transform.position.x, this.transform.position.y  +  1.0f, this.transform.position.z), Quaternion.identity);
 		StartCoroutine(DisableHittable());
 	}
 }
@@ -94,7 +94,7 @@ void  OnCollisionEnter2D(Collision2D col)
 		// ensure that we move this object sufficiently 
 		rigidBody.AddForce(new  Vector2(0, rigidBody.mass*20), ForceMode2D.Impulse);
 		// spawn mushroom
-		Instantiate(consummablePrefab, new  Vector3(this.transform.position.x, this.transform.position.y  +  1.0f, this.transform.position.z), Quaternion.identity);
+		Instantiate(consumablePrefab, new  Vector3(this.transform.position.x, this.transform.position.y  +  1.0f, this.transform.position.z), Quaternion.identity);
 		// begin check to disable object's spring and rigidbody
 		StartCoroutine(DisableHittable());
 	}
@@ -165,11 +165,11 @@ Then in the Camera's inspector, link up the references of Mario's Transform and 
 
 # Destroy GameObject
 
-One final thing to do is to ensure that the `ConsummableMushroomSimple` Prefab is **Destroyed** once it **goes out of view.** It is very simple to do this as there's a callback dedicated for it: `OnBecameInvisible`. 
+One final thing to do is to ensure that the `ConsumableMushroomSimple` Prefab is **Destroyed** once it **goes out of view.** It is very simple to do this as there's a callback dedicated for it: `OnBecameInvisible`. 
 
 > From Unity's documentation: `OnBecameInvisible` is called when the **renderer** is no longer visible by any camera. This message is sent to all scripts attached to the renderer.  [OnBecameVisible](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnBecameVisible.html)  and  [OnBecameInvisible](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnBecameInvisible.html)  is useful to avoid computations that are only necessary when the object is visible.
 
-Open the script controlling `ConsummableMushroomSimple` and add the following method, and we're done! The mushroom disappears once it's no longer visible by the camera. This callback obviously only works on gameObjects that have `Renderer` attached to it. 
+Open the script controlling `ConsumableMushroomSimple` and add the following method, and we're done! The mushroom disappears once it's no longer visible by the camera. This callback obviously only works on gameObjects that have `Renderer` attached to it. 
 
 ```java
 void  OnBecameInvisible(){

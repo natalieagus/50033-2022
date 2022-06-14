@@ -107,7 +107,7 @@ SFX Reverb has many properties, and it is best if you find presets online to get
 Another very useful effect is duck volume, that allows the group's volume to automatically reduce when something else is playing above a certain threshold. For example, if we want to reduce the background music whenever the player is jumping. 
 
 Add Duck Volume effect in Background Sound group, and set its threshold to be -65 dB.  
-<img src="https://www.dropbox.com/s/mj5y3txzgfcx706/3.png?raw=1"  class="center_ninety"/>
+<img src="/50005/assets/images/lab4/1.png"  class="center_ninety"/>
 
 
 This configuration means:

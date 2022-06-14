@@ -118,7 +118,7 @@ Test run to see if the box now looks _bouncier_.
 # Spawning GameObjects at Runtime
 Now what's left is to spawn something at the top of the HittableSimple object when Mario hits its bottom edge. We can begin by creating the prefab of the object that we are going to spawn. 
 
-Create a new 2D GameObject >> Sprites >> Square, name it `ConsummableMushroomSimple`:
+Create a new 2D GameObject >> Sprites >> Square, name it `ConsumableMushroomSimple`:
 * Change the Sprite property into any mushroom, e.g: `items_0`
 * Add Rigidbody2D component (`Dynamic` type, with `Gravity Scale` of 10) 
 * Add BoxCollider2D component and edit the collider to match the sprite
@@ -135,7 +135,7 @@ Double click on the `HittableSimple` **Prefab** (not the one on your scene!), an
 
 The logic for this script is:
 1.  If the EdgeDetector has collided with Mario, then it has to *bounce* 
-2.  And spawn the `ConsummableMushroomSimple` instantly, exactly **once** 
+2.  And spawn the `ConsumableMushroomSimple` instantly, exactly **once** 
 3. *When the box has finished bouncing*, it has to change Sprite (so the player wont hit it again)
 4. And we have to disable the Spring as well (the box turns into a stationary object, just like the regular Brick) 
 
@@ -145,7 +145,7 @@ Declare the following variables in `QuestionBoxController.cs`:
 ```java
 public  Rigidbody2D rigidBody;
 public  SpringJoint2D springJoint;
-public  GameObject consummablePrefab; // the spawned mushroom prefab
+public  GameObject consumablePrefab; // the spawned mushroom prefab
 public  SpriteRenderer spriteRenderer;
 public  Sprite usedQuestionBox; // the sprite that indicates empty box instead of a question mark
 private bool hit =  false;
@@ -158,7 +158,7 @@ void  OnCollisionEnter2D(Collision2D col)
 	if (col.gameObject.CompareTag("Player") &&  !hit){
 		hit  =  true;
 		// spawn the mushroom prefab slightly above the box
-		Instantiate(consummablePrefab, new  Vector3(this.transform.position.x, this.transform.position.y  +  1.0f, this.transform.position.z), Quaternion.identity);
+		Instantiate(consumablePrefab, new  Vector3(this.transform.position.x, this.transform.position.y  +  1.0f, this.transform.position.z), Quaternion.identity);
 	}
 }
 ```
@@ -166,7 +166,7 @@ void  OnCollisionEnter2D(Collision2D col)
 This will allow you to spawn the Mushroom right above the box when it's hit by Mario.  
 * Attach this script to `EdgeDetector` GameObject under `HittableSimple` prefab (again, in prefab mode as shown in screenshot below! Not your game scene), 
 * Link up all the required public variables with all the assets. 
-* All assets except `Consummable Prefab` must be those in the Prefab's Tab and not the Assets tab.  
+* All assets except `Consumable Prefab` must be those in the Prefab's Tab and not the Assets tab.  
 * You can find the mushroom prefab to link here under the Assets tab. 
 
 <img src="https://www.dropbox.com/s/r5a7nshbtl94m47/19a.png?raw=1"  class="center_ninety"/>

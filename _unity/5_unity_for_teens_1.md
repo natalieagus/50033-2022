@@ -178,7 +178,7 @@ Then simply utilise `marioUpSpeed` and `marioMaxSpeed` accordingly in your game.
                 onGroundState = false;
                 // part 2
                 marioAnimator.SetBool("onGround", onGroundState);
-                countScoreState = true; //check if Gomba is underneath
+                countScoreState = true; //check if goomba is underneath
             }
         }
 ```
@@ -303,7 +303,7 @@ As usual, invoke the events when there's collision between the enemy and the pla
 ## UnityEvent.Invoke
 What does `Invoke` do? Well, as the name said it invoke **all registered callbacks** (runtime and persistent). Who are these items? That, is set on the **Inspector**, which is none other than the `Raised` methods of our ScriptableObject `OnPlayerDeath` and `OnEnemyDeath`. 
 
-Attach the script into a **new Gomba prefab** (pretty much the same as before, just with a new script and name it differently so you can look back and differentiate between the previous version without scriptable object event system):
+Attach the script into a **new goomba prefab** (pretty much the same as before, just with a new script and name it differently so you can look back and differentiate between the previous version without scriptable object event system):
 
 <img src="https://www.dropbox.com/s/gtke683pef2mfhh/11.png?raw=1"  class="center_ninety"/>
 
@@ -327,7 +327,7 @@ We learned before that the **signature** of an Event must match the delegate. Si
 
 > It is also important to notice that **Events DO NOT have return values**, because it simply doesn't make sense. Who do we return the values to? The Invoker? What if there's many subscribers, do we collect all return values? It doesn't make sense. 
 
-Now to simply set this **callback** `PlayerDeathResponse` as the method called whenever `onPlayerDeath.Invoke();` is called, we attach the `GameEventListener` component for the Enemy gomba prefab, **set** `OnPlayerDeath` event as the event to listen to and **set** the response **Object** and **Method** at the inspector directly: 
+Now to simply set this **callback** `PlayerDeathResponse` as the method called whenever `onPlayerDeath.Invoke();` is called, we attach the `GameEventListener` component for the Enemy goomba prefab, **set** `OnPlayerDeath` event as the event to listen to and **set** the response **Object** and **Method** at the inspector directly: 
 
 <img src="https://www.dropbox.com/s/47fdg86j477ssbb/12.png?raw=1"  class="center_ninety"/>
  
@@ -380,7 +380,7 @@ public class SpawnManagerEV : MonoBehaviour
     void startSpawn(Scene scene, LoadSceneMode mode)
     {
         for (int j = 0; j < 2; j++)
-            spawnFromPooler(ObjectType.gombaEnemy);
+            spawnFromPooler(ObjectType.goombaEnemy);
     }
 
 
@@ -403,7 +403,7 @@ public class SpawnManagerEV : MonoBehaviour
 
     public void spawnNewEnemy()
     {
-        ObjectType i = Random.Range(0, 2) == 0 ? ObjectType.gombaEnemy : ObjectType.greenEnemy;
+        ObjectType i = Random.Range(0, 2) == 0 ? ObjectType.goombaEnemy : ObjectType.greenEnemy;
         spawnFromPooler(i);
     }
 

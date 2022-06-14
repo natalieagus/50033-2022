@@ -365,8 +365,8 @@ Then `await` that in the caller:
    {	
 	   // parallel load, and will complete when all of the supplied tasks have completed.
         var (a, b) = await UniTask.WhenAll(
-            LoadAsSprite("gomba1"),
-            LoadAsSprite("gomba2"));
+            LoadAsSprite("goomba1"),
+            LoadAsSprite("goomba2"));
         Debug.Log("The sprite: " + ((Sprite)a).name + " has been loaded.");
         Debug.Log("The sprite: " + ((Sprite)b).name + " has been loaded.");
         await  UniTask.Delay(2000); // introduce delay purposely for learning purposes

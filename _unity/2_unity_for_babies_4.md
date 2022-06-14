@@ -17,7 +17,7 @@ show_date: false
 For this checkoff, you're required to implement everything you can see in the demo .gif below (you can just gauge and estimate the placement of each obstacle). 
 
 
-Everything is mostly covered in this lab, **except the script that controls the `ConsummableMushroomSimple`** and the  addition of **background objects** as shown in the demo .gif below. In summary, for this checkoff you must (but you can do more):
+Everything is mostly covered in this lab, **except the script that controls the `ConsumableMushroomSimple`** and the  addition of **background objects** as shown in the demo .gif below. In summary, for this checkoff you must (but you can do more):
 * Write a script so the spawned mushroom can behave exactly like the .gif shown.
 
 	* You can use the suggested method above, or use other means that gives the same visual effect. You can also use any Mushroom sprite, it doesn't have to be this green one or the red one above. 
