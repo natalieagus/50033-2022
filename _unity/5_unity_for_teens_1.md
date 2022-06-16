@@ -13,7 +13,6 @@ show_edit_on_github: false
 show_date: false
 ---
 
-# Game Architecture With Scriptable Object
 Ultimately, if you choose to go down the Singleton Path, the choice is entirely up to you but we feel that it is our responsibility to introduce you to another great alternative using Scriptable Objects. This will revamp our existing project by quite a lot, but the benefits are worth it:
 * Scenes are clean slates
 * No dependency between Systems and they are modular
@@ -34,7 +33,7 @@ To get you up to speed, you can **create** a new Scene and name it `MarioLevel1`
 * You can leave EnemySpawnPool gameobject with `ObjectPooler.cs` attached. Set the `Items To Pool` to 0. 
 * The rest of the stuffs that can be in the Scene is simply stuffs with **no script at all**: just the Brick, some Pipe, and the Castle. 
 
-**Create another Scen**e `MarioLevel2` as such:
+**Create another Scene** `MarioLevel2` as such:
 
 <img src="https://www.dropbox.com/s/ejqnlh7udzy74u0/9.png?raw=1"  class="center_ninety"/>
 
@@ -436,6 +435,7 @@ Updating score is fairly easy with this architecture. Suppose we want to add the
 <img src="https://www.dropbox.com/s/yvtyl73ndk34g2u/17.png?raw=1"  class="center_ninety"/>
 
 We can subscribe more than one responses in the GameEventListener, and each method will be called **in sequence**, that is `ApplyChange` first and then `UpdateScore`. 
+> Note that if the score value is updated at all times from the scriptable object `MarioScore`, then there's no need to implement an `UpdateScore`. Some people might want to set the scoreText only necessarily since the text component value is persistent.
 
 **Create** a new Scriptable Object IntVariable **instance** and name it MarioScore. This will hold Mario's current score. 
 

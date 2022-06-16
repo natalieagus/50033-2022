@@ -13,7 +13,6 @@ show_edit_on_github: false
 show_date: false
 ---
 
-# Inventory System
 Another useful application of ScriptableObject is to utilise them as an **inventory system**. The idea is to have an Inventory Scriptable Object, and a Scriptable Object for every possible *item*. We can apply this idea to our Powerup system. 
 
 Recall that in the previous lab, we created the UI for powerups in the Scene: 
