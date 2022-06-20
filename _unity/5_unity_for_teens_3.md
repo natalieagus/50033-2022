@@ -13,7 +13,7 @@ show_edit_on_github: false
 show_date: false
 ---
 
-Implement a *Powerup Cast** feature using the ScriptableObject Event system. 
+Implement a *Powerup Cast* feature using the ScriptableObject Event system. 
 * When key Z is pressed, attempt to cast powerup in the first slot. Nothing should happen if you haven't collected anything there. Else, it must affect Mario's max or jump speed for a *specific duration* as dictated in the Powerup ScriptableObject instance. 
 * Similarly with key X, for the powerup in the second slot. 
 * You need to have at least **two different powerups** as per previous lab. 
