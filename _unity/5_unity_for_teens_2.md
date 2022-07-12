@@ -335,6 +335,12 @@ public class PowerupManagerEV : MonoBehaviour
     {
         ResetValues();
     }
+
+    public void ResetValues()
+    {
+        powerupInventory.Clear();
+        resetPowerup();
+    }
  }
 ```
 The `Start` method contains a quick check on whether the game is started the first time or not. If not, we shall render whatever powerup exists in our inventory. 
